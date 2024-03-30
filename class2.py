@@ -10,6 +10,7 @@ class Car:
     def cekcarinfo(self):
         print(f"Name Car : {self.name} \nCar brand : {self.brand} \nCar capacity : {self.capacity} \nCar position : {self.position} \nCar status_engine {self.status_engine}")
 
+<<<<<<< HEAD
     def star_engine(self):
         self.status_engine = True
     def stop_engine(self):
@@ -21,3 +22,8 @@ class Car:
 
 
 
+=======
+
+carme = Car("Innova","Toyota",40)
+carme.cekcarinfo()
+>>>>>>> 16e1a23 (Buat Surya)
