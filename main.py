@@ -3,5 +3,5 @@ import class2
 import class3
 
 
-print("Hello World")
-
+class Sekolah:
+    def __init__ (self)
