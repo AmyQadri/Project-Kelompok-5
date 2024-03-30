@@ -1,14 +1,7 @@
-import class1
-import class2
-import class3
+from class1 import User
+from class2 import Car
+from class3 import Work
 
+Jelita = User("Jelita Nurwahida", 20, 80, 1000000, "Jelita@mail", 5, 10,40)
 
-class Sekolah:
-    def __init__ (self,nilai, sks, kls):
-        self.nilai = nilai
-        self.sks = sks
-        self.kls = kls
-
-    def __str__(self):
-        return "Nilai: {}\nSKS: {}\nKelas: {}".format(self.nilai, self.sks, self.kls)
-    
+Jelita.user_info
