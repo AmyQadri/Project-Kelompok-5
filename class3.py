@@ -11,7 +11,7 @@ class Work:
     def cekinfodriver(self):
         print(f"name : {self.name} \nplate_number : {self.plate_number} \npickup_location : {self.pickup_location} \ndestination_location : {self.destination_location} \ncosh : {self.cosh} \nrating : {self.rating}")
 
-    def
+    def 
             
               
               
