@@ -4,6 +4,7 @@ class Car:
         self.brand = brand
         self.capacity = capacity
         self.position = (0,0)
+        self.spead = 0
         self.status_engine = False
     
 
@@ -15,6 +16,14 @@ class Car:
         self.status_engine = True
     def stop_engine(self):
         self.status_engine = False
+
+    def accelerate (self,sped)
+         self.speed = speed
+        if speed > 0:
+            self.position = (self.position[0] + speed, self.position[1])
+        else:
+            self.position = (self.position[0], self.position[1] - speed)
+        
 
 
 
