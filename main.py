@@ -2,6 +2,11 @@ from class1 import User
 from class2 import Car
 from class3 import Work
 
-Jelita = User("Jelita Nurwahida", 20, 80, 1000000, "Jelita@mail", 5, 10,40)
+CarMe = Car("Avanza","Toyota",33)
+Jelita = User("Jelita Nurwahida", 20, 80, 1000000, "Jelita@mail", 5, 10)
 
-Jelita.user_info
+
+
+CarMe.star_engine()
+Jelita.Working(CarMe)
+CarMe.cekcarinfo()
