@@ -33,6 +33,17 @@ class User:
         print("SkdjJFFKA")
         Apk.DropOff()
         print("Jarak Yang Akan Ditempuh Adalah :",Apk.Distance())
+        if Apk.distance >= 100 :
+            Apk.cosh = 10000
+        elif Apk.distance >= 50 :
+            Apk.cosh = 5000
+        elif Apk.distance >= 20 :
+            Apk.cosh = 3000
+        elif Apk.distance >= 10 :
+            Apk.cosh = 2000
+        else :
+            Apk.cosh = 1000
+        print("Biaya Yang Harus Dibayarkan : ",Apk.cosh)
 
 
     def PushEnergy(self,energy):
