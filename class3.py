@@ -24,3 +24,4 @@ class Work:
         return distance
 
         
+        
