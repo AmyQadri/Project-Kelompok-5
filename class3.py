@@ -6,7 +6,6 @@ class Work:
         self.destination_location = None
         self.distance = 0
         self.cosh = 0
-        self.rating = None
 
     def cekinfodriver(self):
         print(f"name : {self.name} \nplate_number : {self.plate_number} \npickup_location : {self.pickup_location} \ndestination_location : {self.destination_location} \ncosh : {self.cosh} \nrating : {self.rating}")
@@ -20,7 +19,7 @@ class Work:
         self.destination_location = DropOff_Location
 
     def Distance(self):
-        distance = self.pickup_location - self.destination_location
+        distance = self.pickup_location + self.destination_location
         self.distance = distance
         return distance
 

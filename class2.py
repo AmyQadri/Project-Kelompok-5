@@ -23,9 +23,19 @@ class Car:
         else:
             self.position = (self.position[0], self.position[1] - speed)
 
-
-
-
-
-
+    def FuelConsumption(self):
+        if self.speed > 100:
+            self.capacity -= 10
+        elif self.speed >= 60 <= 100:
+            self.capacity -= 6
+        elif self.speed >= 50 <= 60:
+            self.capacity -= 5
+        elif self.speed >= 40 <= 50:
+            self.capacity -= 4
+        elif self.speed >= 30 <= 40:
+            self.capacity -= 3
+        elif self.speed >= 20 <= 30:
+            self.capacity -= 2
+        else:
+            self.capacity -= 1
 
