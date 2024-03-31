@@ -4,35 +4,35 @@ class Car:
         self.brand = brand
         self.capacity = capacity
         self.position = (0,0)
-        self.spead = 0
+        self.speed = 0
         self.status_engine = False
     
 
-    def cekcarinfo(self):
+    def CheckCarInfo(self):
         print(f"Name Car : {self.name} \nCar brand : {self.brand} \nCar capacity : {self.capacity} \nCar position : {self.position} \nCar status_engine {self.status_engine}")
 
-<<<<<<< HEAD
-    def star_engine(self):
+    def StarEngine(self):
         self.status_engine = True
-    def stop_engine(self):
+    def StopEngine(self):
         self.status_engine = False
 
-    def accelerate (self,sped)
-         self.speed = speed
+    def Accelerate (self,speed):
+        self.speed = speed
         if speed > 0:
             self.position = (self.position[0] + speed, self.position[1])
         else:
             self.position = (self.position[0], self.position[1] - speed)
+
+    def FuelConsumption(self):
+        if Apk.distance > 100:
+            self.capacity -= 10
+        elif Apk.distance > 60:
+            self.capacity -= 6
+        elif Apk.distance > 30:
+            self.capacity -= 3
+        else Apk.distance 
+
+     
         
 
 
-
-
-
-
-
-=======
-
-carme = Car("Innova","Toyota",40)
-carme.cekcarinfo()
->>>>>>> 16e1a23 (Buat Surya)
