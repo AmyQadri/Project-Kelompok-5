@@ -4,17 +4,15 @@ class Car:
         self.brand = brand
         self.capacity = capacity
         self.speed = 0
-        self.position = (0,0)
-        self.spead = 0
         self.status_engine = False
     
 
-    def cekcarinfo(self):
+    def CheckCarInfo(self):
         print(f"Name Car : {self.name} \nCar brand : {self.brand} \nCar capacity : {self.capacity} \nCar position : {self.position} \nCar status_engine {self.status_engine}")
 
-    def star_engine(self):
+    def StarEngine(self):
         self.status_engine = True
-    def stop_engine(self):
+    def StopEngine(self):
         self.status_engine = False
 
     def Accelerate (self,speed):
