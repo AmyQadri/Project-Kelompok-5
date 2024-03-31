@@ -1,11 +1,11 @@
 class Work:
-    def __init__(self,driver_name,plate_number,cosh):
+    def __init__(self,driver_name,plate_number):
         self.driver_name = driver_name
         self.plate_number = plate_number 
         self.pickup_location = None
         self.destination_location = None
         self.distance = 0
-        self.cosh = cosh 
+        self.cosh = 0
         self.rating = None
 
     def cekinfodriver(self):
@@ -22,5 +22,6 @@ class Work:
     def Distance(self):
         distance = self.pickup_location - self.destination_location
         self.distance = distance
+        return distance
 
         

@@ -3,6 +3,7 @@ class Car:
         self.name = name
         self.brand = brand
         self.capacity = capacity
+        self.position = (0,0)
         self.speed = 0
         self.status_engine = False
     

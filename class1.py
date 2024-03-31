@@ -5,7 +5,7 @@ class User:
         self.energy = 0
         self.cash = cash
         self.email = email
-        self.location = (0,0)
+        self.location = ()
         self.user_level = 0
         self.reward_point = 0
 
@@ -26,6 +26,14 @@ class User:
                 print("Lokasi Terlalu Jauh, Tak Terdefenisi!")
         else:
             print("Hidupkan Dulu Mesin Nya Bang")
+
+    def Working(self,Apk):
+        print("Tentukan Titik Penjemputan")
+        Apk.PickUp()
+        print("SkdjJFFKA")
+        Apk.DropOff()
+        print("Jarak Yang Akan Ditempuh Adalah :",Apk.Distance())
+
 
     def PushEnergy(self,energy):
         self.energy += energy
