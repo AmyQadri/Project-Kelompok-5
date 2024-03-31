@@ -10,4 +10,8 @@ Apk = Work("Surya",443301)
 
 CarMe.StarEngine()
 Jelita.RunCarForWorking(CarMe)
+<<<<<<< HEAD
 Jelita.Working(Apk)
+=======
+Jelita.Working(Apk)
+>>>>>>> 06ff0eb564da372dae6b8dfd634d1ea05e94c9b0

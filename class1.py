@@ -30,7 +30,7 @@ class User:
     def Working(self,Apk):
         print("Tentukan Titik Penjemputan")
         Apk.PickUp()
-        print("SkdjJFFKA")
+        print("Tentukan Titik Tujuan")
         Apk.DropOff()
         print("Jarak Yang Akan Ditempuh Adalah :",Apk.Distance())
         if Apk.distance >= 100 :
@@ -48,11 +48,9 @@ class User:
         else :
             Apk.cosh = 1000
         print("Biaya Yang Harus Dibayarkan : ",Apk.cosh)
-        
 
 
     def PushEnergy(self,energy):
         self.energy += energy
-        self.cash += 10
-            
+        self.cash -= 10
             
