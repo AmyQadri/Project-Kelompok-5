@@ -41,18 +41,21 @@ class Car:
         else:
             self.capacity -= 1
 
-    def Refuel(self):
+    def Refuel(self,User):
         print("Menu Bahan Bakar ::")
         print("1. 10 Liter (10.000) \n2. 20 Liter (20.000) \n3. Full Tank")
         MasukanBahanBakar = int(input("Masukan Bahan Bakar Yang Ingin Diisi :"))
         if MasukanBahanBakar == 1:
             self.capacity += 10
+            User.cash -= 10000
             print("Bahan Bakar Sudah Diisi!")
         elif MasukanBahanBakar == 2:
             self.capacity += 20
+            User.cash -= 20000
             print("Bahan Bakar Sudah Diisi!")
         elif MasukanBahanBakar == 3:
-            self.capacity = 33
+            self.capacity = 35
+            User.cash -= 35000
             print("Bahan Bakar Sudah Diisi!")
         else:
             print("Invalid Menu!")
