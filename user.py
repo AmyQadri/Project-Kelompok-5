@@ -42,7 +42,11 @@ class User:
                 else :
                     Driver.cosh = 1000 - 50
                     self.cash += Driver.cosh
-                self.energy -= 3
+                self.energy -= 5
+
+                if self.energy <= 0 :
+                    self.energy = 0
+                    print("Energy Tidak Cukup")
                 
                 self.AmountOfWork += 1
                 if self.AmountOfWork >= 2 :
@@ -85,10 +89,10 @@ class User:
         Pilihan = int(input("Masukan Pilihan Istirahat :"))
         if Pilihan == 1:
             self.energy += 5
-            print("Istirahat Dengan Tidur,Berhasil")
+            print("\nIstirahat Dengan Tidur,Berhasil")
         elif Pilihan == 2:
             self.energy += 15
             self.cash -= 17000
-            print("Istirahat Dengan Makan,Berbayar")
+            print("\nIstirahat Dengan Makan,Berbayar")
         else:
             print("Invalid Menu!")

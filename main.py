@@ -8,19 +8,19 @@ Driver = WorkApplication("Jelita",443301)
 Menu = 0
 
 
-while Menu != 10:
-    print("===============================================")
+while Menu != 9:
+    print("\n================================================")
     print("Selamat Datang! Pilih Menu Yang Ingin Dijalankan :")
     print("1. Check Informasi Pengguna")
     print("2. Check Informasi Mobil")
     print("3. Check Informasi Driver")
     print("4. Nyalakan Mesin Mobil")
     print("5. Matikan Mesin Mobil")
-    print("6. Jalankan Aplikasi")
-    print("7. Jalankan Mobil")
-    print("8. Istirahat (Menambah Energy)")
-    print("9. Isi Bahan Bakar")
-    print("10. Exit")
+    print("6. Pergi Bekerja")
+    print("7. Istirahat (Menambah Energy)")
+    print("8. Isi Bahan Bakar")
+    print("9. Exit \n")
+    print("=================================================")
     Menu = int(input("Masukan Pilihan ::"))
 
     if Menu == 1:
@@ -35,13 +35,19 @@ while Menu != 10:
         CarMe.StopEngine()
     elif Menu == 6:
         Jelita.Working(Driver,CarMe)
-    elif Menu == 7:
         Jelita.RunCarForWorking(CarMe)
-    elif Menu == 8:
+        print("\nINFORMASI : \nTotal Point Anda Adalah :",Jelita.reward_point)
+        print("Total Cash Anda Adalah :",Jelita.cash)
+        print("Sisa Bensin :",CarMe.capacity)
+        print("Sisa Energy :",Jelita.energy)
+    elif Menu == 7:
         Jelita.PushEnergy()
-    elif Menu == 9:
+        print("Sisa Cash Anda Adalah :",Jelita.cash)
+        print("Energy Saat Ini Adalah :",Jelita.energy)
+    elif Menu == 8:
         CarMe.Refuel(Jelita)
-    elif Menu == 10:
+        print("Total Bensin Saat Ini :",CarMe.capacity)
+    elif Menu == 9:
         print("Terima Kasih Atas Kehadiran Anda!")
     else:
         print("Invalid Menu!")
